@@ -1,16 +1,17 @@
 # sidehustle_capstone2_group3
 
-A new Flutter project.
 
-## Getting Started
+## To Get Started
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+- First Fork this repository so you can make changes to the app.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+- To avoid conflicts, pls only work on files that will make your feature work.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Once you finish your feature, you can make pull request so your feature will be merged.
+
+- In your pull request please provide a screenshot of your complete feature. 
+
+- REMEMBER GOOGLE IS ALWAYS YOUR FRIEND LOL.
+
+- 🥂🥂🥂🥂🥂🥂🥂🥂🥂🥂🥂🥂🥂🥂🥂🥂🥂🥂🥂🥂🥂🥂🥂🥂🥂🥂🥂🥂🥂🥂🥂🥂
