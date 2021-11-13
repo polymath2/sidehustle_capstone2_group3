@@ -1,4 +1,4 @@
-name: Windows CI
+name: Android CI
 
 # This workflow is triggered on pushes to the repository.
 
@@ -20,11 +20,9 @@ jobs:
             # flutter-version: '1.12.x' # you can also specify exact version of flutter
 
         - run: flutter doctor -v
-        - run: flutter config --enable-windows-desktop
         - run: flutter clean
         - run: flutter pub get
-        - run: flutter pub run build_runner build --delete-conflicting-outputs
         - run: flutter format .
         #- run: flutter analyze
         - run: flutter test
-        - run: flutter build windows --debug
+        - run: flutter build apk
