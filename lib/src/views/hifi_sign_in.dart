@@ -26,8 +26,14 @@ class HifiScreen extends StatelessWidget {
         padding: const EdgeInsets.symmetric(vertical: 40, horizontal: 30),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
+          children: const [
             // All OUR WIDGETS WILL GO IN HERE
+            Center(
+                child: CircleAvatar(
+              radius: 100.0,
+              backgroundColor: Colors.transparent,
+              backgroundImage: AssetImage('assets/images/BLEND.svg'),
+            ))
           ],
         ),
       ),
