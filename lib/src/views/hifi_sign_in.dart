@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:sidehustle_capstone2_group3/src/constants/constants.dart';
 import 'package:sidehustle_capstone2_group3/src/views/lofi_sign.dart';
+import 'package:sidehustle_capstone2_group3/src/views/remember_me_forget_password.dart';
 
 class HifiScreen extends StatelessWidget {
   static const id = 'HifiView';
@@ -58,7 +59,8 @@ class HifiScreen extends StatelessWidget {
                       contentPadding: EdgeInsets.only(top: 14),
                       border: InputBorder.none,
                     )),
-              )
+              ),
+              RememberMeForgetPassword()
             ],
           )),
     );
