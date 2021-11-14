@@ -6,6 +6,8 @@ class LofiScreen extends StatelessWidget {
   static const id = 'LofiView';
   const LofiScreen({Key? key}) : super(key: key);
 
+  final bool isChecked = false;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,22 +29,34 @@ class LofiScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             // All OUR WIDGETS WILL GO IN HERE
+<<<<<<< HEAD
 
+=======
+>>>>>>> 12e97a12fafbb3165e6fe27f322141601b3d2283
+            const SizedBox(
+              width: 30,
+            ),
             Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Row(
                   children: [
-                    Checkbox(
-                      activeColor: Colors.grey,
-                      fillColor: null,
-                      value: false,
-                      onChanged: (value) {},
+                    const SizedBox(
+                      width: 10,
                     ),
+                    Checkbox(
+                        value: isChecked,
+                        onChanged: (bool? newValue) {
+                          // setState(() {
+                          //   isChecked = newValue!;
+                          // });
+                        }),
                     const Text(
                       'Remember Me',
                     ),
                   ],
+                ),
+                const SizedBox(
+                  width: 150,
                 ),
                 const Text('Forget Password?'),
               ],
