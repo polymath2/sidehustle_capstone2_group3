@@ -29,7 +29,10 @@ class LofiScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             // All OUR WIDGETS WILL GO IN HERE
+<<<<<<< HEAD
 
+=======
+>>>>>>> 12e97a12fafbb3165e6fe27f322141601b3d2283
             const SizedBox(
               width: 30,
             ),
