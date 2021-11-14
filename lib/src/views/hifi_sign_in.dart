@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+
 import 'package:flutter/material.dart';
 import 'package:sidehustle_capstone2_group3/src/constants/constants.dart';
 import 'package:sidehustle_capstone2_group3/src/views/lofi_sign.dart';
@@ -23,14 +25,42 @@ class HifiScreen extends StatelessWidget {
       ),
       backgroundColor: kHifiScafoldColor,
       body: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 40, horizontal: 30),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            // All OUR WIDGETS WILL GO IN HERE
-          ],
-        ),
-      ),
+          padding: const EdgeInsets.symmetric(vertical: 40, horizontal: 30),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: <Widget>[
+              Text(
+                'Email or Username',
+                style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold),
+              ),
+              SizedBox(height: 10),
+              Container(
+                alignment: Alignment.centerLeft,
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(10),
+                    boxShadow: [
+                      BoxShadow(
+                          color: Colors.black26,
+                          blurRadius: 6,
+                          offset: Offset(0, 2))
+                    ]),
+                height: 60,
+                child: TextField(
+                    keyboardType: TextInputType.emailAddress,
+                    style: TextStyle(color: Colors.black87),
+                    decoration: InputDecoration(
+                      hintText: 'Enter Your Mail or Username',
+                      hintStyle: TextStyle(color: Colors.black38),
+                      contentPadding: EdgeInsets.only(top: 14),
+                      border: InputBorder.none,
+                    )),
+              )
+            ],
+          )),
     );
   }
 }
