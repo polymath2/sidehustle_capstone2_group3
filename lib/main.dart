@@ -6,7 +6,6 @@ import 'package:sidehustle_capstone2_group3/src/views/lofi_sign.dart';
 void main() {
   runApp(
     MaterialApp(
-      theme: ThemeData(unselectedWidgetColor: unselectedWidgetColor),
       initialRoute: HifiScreen.id,
       routes: {
         HifiScreen.id: (context) => const HifiScreen(),
