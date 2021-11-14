@@ -1,9 +1,6 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
-
 import 'package:flutter/material.dart';
 import 'package:sidehustle_capstone2_group3/src/constants/constants.dart';
 import 'package:sidehustle_capstone2_group3/src/views/lofi_sign.dart';
-import 'package:sidehustle_capstone2_group3/src/views/remember_me_forget_password.dart';
 
 class HifiScreen extends StatelessWidget {
   static const id = 'HifiView';
@@ -26,60 +23,53 @@ class HifiScreen extends StatelessWidget {
       ),
       backgroundColor: kHifiScafoldColor,
       body: Padding(
-<<<<<<< HEAD
         padding: const EdgeInsets.symmetric(vertical: 40, horizontal: 30),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            // All OUR WIDGETS WILL GO IN HERE
-            Center(
-                child: CircleAvatar(
-              radius: 100.0,
-              backgroundColor: Colors.transparent,
-              backgroundImage: AssetImage('assets/images/BLEND.svg'),
-            ))
+          children: <Widget>[
+            // Email input
+            const Text(
+              'Email or Username',
+              style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold),
+            ),
+            const SizedBox(height: 10),
+            TextField(
+              keyboardType: TextInputType.emailAddress,
+              style: const TextStyle(color: Colors.black87),
+              decoration: InputDecoration(
+                
+                hintText: 'Enter Your Mail or Username',
+                hintStyle: const TextStyle(color: Colors.black38),
+                border: OutlineInputBorder(
+                  
+                  borderRadius: BorderRadius.circular(5),
+                ),
+              ),
+            ),
+            //Remeber me/ forgot password
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Row(
+                  children: [
+                    Checkbox(
+                      value: false,
+                      onChanged: (value) {},
+                    ),
+                    const Text(
+                      'Remember Me',
+                    ),
+                  ],
+                ),
+                const Text('Forget Password?'),
+              ],
+            ),
           ],
         ),
       ),
-=======
-          padding: const EdgeInsets.symmetric(vertical: 40, horizontal: 30),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: <Widget>[
-              Text(
-                'Email or Username',
-                style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold),
-              ),
-              SizedBox(height: 10),
-              Container(
-                alignment: Alignment.centerLeft,
-                decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(10),
-                    boxShadow: [
-                      BoxShadow(
-                          color: Colors.black26,
-                          blurRadius: 6,
-                          offset: Offset(0, 2))
-                    ]),
-                height: 60,
-                child: TextField(
-                    keyboardType: TextInputType.emailAddress,
-                    style: TextStyle(color: Colors.black87),
-                    decoration: InputDecoration(
-                      hintText: 'Enter Your Mail or Username',
-                      hintStyle: TextStyle(color: Colors.black38),
-                      contentPadding: EdgeInsets.only(top: 14),
-                      border: InputBorder.none,
-                    )),
-              ),
-              RememberMeForgetPassword()
-            ],
-          )),
->>>>>>> 12e97a12fafbb3165e6fe27f322141601b3d2283
     );
   }
 }
