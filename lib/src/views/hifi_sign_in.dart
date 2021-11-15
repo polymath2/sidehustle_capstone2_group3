@@ -27,6 +27,11 @@ class HifiScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
+            CircleAvatar(
+              radius: 100.0,
+              backgroundColor: Colors.transparent,
+              backgroundImage: AssetImage('assets/images/BLEND.svg'),
+            )
             // All OUR WIDGETS WILL GO IN HERE
           ],
         ),
