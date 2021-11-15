@@ -27,6 +27,25 @@ class LofiScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             // All OUR WIDGETS WILL GO IN HERE
+
+            //Sign In Button
+            ElevatedButton(
+              onPressed: () {},
+              child: Text(
+                "SIGN IN",
+              ),
+              style: ElevatedButton.styleFrom(
+                primary: Colors.grey[700],
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.all(Radius.circular(30.0)),
+                ),
+                textStyle: TextStyle(
+                  fontWeight: FontWeight.bold
+                ),
+              ),
+            )
+
+
           ],
         ),
       ),
