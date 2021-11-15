@@ -28,6 +28,26 @@ class HifiScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             // All OUR WIDGETS WILL GO IN HERE
+            //  Password input
+            const Text(
+              'Password',
+              style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold),
+            ),
+            const SizedBox(height: 10),
+            TextField(
+              keyboardType: TextInputType.visiblePassword,
+              style: const TextStyle(color: Colors.black87),
+              decoration: InputDecoration(
+                hintText: '*****************',
+                hintStyle: const TextStyle(color: Colors.black38),
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(5),
+                ),
+              ),
+            ),
           ],
         ),
       ),
