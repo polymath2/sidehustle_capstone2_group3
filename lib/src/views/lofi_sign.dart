@@ -26,7 +26,6 @@ class LofiScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            // All OUR WIDGETS WILL GO IN HERE
             //  Password input
             const Text(
               'Password',
