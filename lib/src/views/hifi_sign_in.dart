@@ -26,10 +26,10 @@ class HifiScreen extends StatelessWidget {
         padding: const EdgeInsets.symmetric(vertical: 40, horizontal: 30),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: <Widget>[
-            // Email input
+          children: [
+            //  Password input
             const Text(
-              'Email or Username',
+              'Password',
               style: TextStyle(
                   color: Colors.black,
                   fontSize: 16,
@@ -37,35 +37,15 @@ class HifiScreen extends StatelessWidget {
             ),
             const SizedBox(height: 10),
             TextField(
-              keyboardType: TextInputType.emailAddress,
+              keyboardType: TextInputType.visiblePassword,
               style: const TextStyle(color: Colors.black87),
               decoration: InputDecoration(
-                
-                hintText: 'Enter Your Mail or Username',
+                hintText: '*****************',
                 hintStyle: const TextStyle(color: Colors.black38),
                 border: OutlineInputBorder(
-                  
                   borderRadius: BorderRadius.circular(5),
                 ),
               ),
-            ),
-            //Remeber me/ forgot password
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Row(
-                  children: [
-                    Checkbox(
-                      value: false,
-                      onChanged: (value) {},
-                    ),
-                    const Text(
-                      'Remember Me',
-                    ),
-                  ],
-                ),
-                const Text('Forget Password?'),
-              ],
             ),
           ],
         ),
