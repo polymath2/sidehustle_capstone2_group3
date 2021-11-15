@@ -28,57 +28,26 @@ class LofiScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            // All OUR WIDGETS WILL GO IN HERE
-<<<<<<< HEAD
-
-            //Sign In Button
-            ElevatedButton(
-              onPressed: () {},
-              child: Text(
-                "SIGN IN",
-              ),
-              style: ElevatedButton.styleFrom(
-                primary: Colors.grey[700],
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.all(Radius.circular(30.0)),
-                ),
-                textStyle: TextStyle(
-                  fontWeight: FontWeight.bold
-                ),
-              ),
-            )
-
-
-=======
-            const SizedBox(
-              width: 30,
+            //  Password input
+            const Text(
+              'Password',
+              style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold),
             ),
-            Row(
-              children: [
-                Row(
-                  children: [
-                    const SizedBox(
-                      width: 10,
-                    ),
-                    Checkbox(
-                        value: isChecked,
-                        onChanged: (bool? newValue) {
-                          // setState(() {
-                          //   isChecked = newValue!;
-                          // });
-                        }),
-                    const Text(
-                      'Remember Me',
-                    ),
-                  ],
+            const SizedBox(height: 10),
+            TextField(
+              keyboardType: TextInputType.visiblePassword,
+              style: const TextStyle(color: Colors.black87),
+              decoration: InputDecoration(
+                hintText: '*****************',
+                hintStyle: const TextStyle(color: Colors.black38),
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(5),
                 ),
-                const SizedBox(
-                  width: 150,
-                ),
-                const Text('Forget Password?'),
-              ],
+              ),
             ),
->>>>>>> 763266005dcb7b517d141f6c2daf4b7586767dd0
           ],
         ),
       ),
