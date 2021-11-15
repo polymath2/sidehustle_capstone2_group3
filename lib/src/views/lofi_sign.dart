@@ -28,34 +28,25 @@ class LofiScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            // All OUR WIDGETS WILL GO IN HERE
-            const SizedBox(
-              width: 30,
+            //  Password input
+            const Text(
+              'Password',
+              style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold),
             ),
-            Row(
-              children: [
-                Row(
-                  children: [
-                    const SizedBox(
-                      width: 10,
-                    ),
-                    Checkbox(
-                        value: isChecked,
-                        onChanged: (bool? newValue) {
-                          // setState(() {
-                          //   isChecked = newValue!;
-                          // });
-                        }),
-                    const Text(
-                      'Remember Me',
-                    ),
-                  ],
+            const SizedBox(height: 10),
+            TextField(
+              keyboardType: TextInputType.visiblePassword,
+              style: const TextStyle(color: Colors.black87),
+              decoration: InputDecoration(
+                hintText: '*****************',
+                hintStyle: const TextStyle(color: Colors.black38),
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(5),
                 ),
-                const SizedBox(
-                  width: 150,
-                ),
-                const Text('Forget Password?'),
-              ],
+              ),
             ),
           ],
         ),
