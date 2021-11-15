@@ -53,3 +53,4 @@ class LofiScreen extends StatelessWidget {
       ),
     );
   }
+}
